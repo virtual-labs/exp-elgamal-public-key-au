@@ -329,66 +329,11 @@
               <h2 id="experiment-9---understanding-elgamal-public-key-cryptosystem">Experiment 9 - Understanding ElGamal public key cryptosystem</h2>
           
             </div>
-              <h1 id="elgamal-public-key-cryptosystem">ElGamal Public Key Cryptosystem</h1>
-          <p>The ElGamal public key cryptosystem is an asymmetric encryption algorithm that provides secure communication over an insecure channel. Named after its inventor, Taher ElGamal, it is widely used for key exchange and digital signatures.</p>
-          <h2 id="key-components">Key Components</h2>
-          <h3 id="1-key-generation">1. Key Generation</h3>
-          <p>ElGamal uses a pair of keys: a public key and a private key.</p>
-          <ul>
-          <li><p><strong>Public Key (PK):</strong> (g, p, y)</p>
-          <ul>
-          <li>g: a generator of a finite cyclic group</li>
-          <li>p: a large prime number</li>
-          <li>y: (g^x) mod p, where x is the private key</li>
-          </ul>
-          </li>
-          <li><p><strong>Private Key (SK):</strong></p>
-          <ul>
-          <li>x: a random integer, 1 &lt; x &lt; p-1</li>
-          </ul>
-          </li>
-          </ul>
-          <h3 id="2-encryption">2. Encryption</h3>
-          <p>The sender uses the recipient's public key to encrypt the message.</p>
-          <ol>
-          <li><p><strong>Select Random Number (k):</strong></p>
-          <ul>
-          <li>k is a random integer, 1 &lt; k &lt; p-1, relatively prime to p-1.</li>
-          </ul>
-          </li>
-          <li><p><strong>Compute Temporary Values:</strong></p>
-          <ul>
-          <li>a = (g^k) mod p</li>
-          <li>b = (y^k * message) mod p</li>
-          </ul>
-          </li>
-          <li><p><strong>Transmit the Cipher (a, b):</strong></p>
-          <ul>
-          <li>The ciphertext is (a, b).</li>
-          </ul>
-          </li>
-          </ol>
-          <h3 id="3-decryption">3. Decryption</h3>
-          <p>The recipient uses their private key to decrypt the received ciphertext.</p>
-          <ol>
-          <li><p><strong>Compute the Shared Secret:</strong></p>
-          <ul>
-          <li>s = (a^x) mod p</li>
-          </ul>
-          </li>
-          <li><p><strong>Compute the Inverse of s:</strong></p>
-          <ul>
-          <li>s_inv = multiplicative_inverse(s, p)</li>
-          </ul>
-          </li>
-          <li><p><strong>Recover the Original Message:</strong></p>
-          <ul>
-          <li>message = (b * s_inv) mod p</li>
-          </ul>
-          </li>
-          </ol>
-          
-          </div>
+              <h3 id="elgamal-public-key-cryptosystem">ElGamal Public Key Cryptosystem</h3>
+            <p>The ElGamal cryptosystem is an asymmetric encryption method that uses a pair of keys: a public key for encryption and a private key for decryption. It is based on the difficulty of solving certain mathematical problems, making it computationally secure. The system allows secure communication between parties without requiring a shared secret key in advance.</p>
+            <p>In the encryption process, a sender uses the receiver’s public key along with a randomly chosen number to convert the original message into ciphertext. The receiver then uses their private key to decrypt the ciphertext and retrieve the original message. This method ensures that even if someone intercepts the ciphertext, they cannot recover the original message without the private key.</p>
+            <p>ElGamal is widely used in secure communication systems and digital signatures because of its strong security features. Its security depends on the use of large numbers and randomness during encryption. The cryptosystem forms the basis for other cryptographic protocols, such as the Digital Signature Algorithm (DSA), and is an important tool for maintaining confidentiality and authenticity in modern communication.</p>
+            </div>
           <div class="bug-report-mobile">
               <bug-report id="bug-report" title="[BUG REPORT] EXPERIMENT 9 - UNDERSTANDING ELGAMAL PUBLIC KEY CRYPTOSYSTEM" page-type="text" context-info="{&quot;organisation&quot;:&quot;Virtual Labs&quot;,&quot;developer_institute&quot;:&quot;AU&quot;,&quot;expname&quot;:&quot;EXPERIMENT 9 - UNDERSTANDING ELGAMAL PUBLIC KEY CRYPTOSYSTEM&quot;,&quot;labname&quot;:&quot;Virtual Lab&quot;,&quot;phase&quot;:&quot;Testing&quot;}" checkbox-json="{&quot;text&quot;:[&quot;Insufficient Content&quot;],&quot;video&quot;:[&quot;Insufficient Content&quot;],&quot;assesment&quot;:[&quot;Incorrect Options&quot;,&quot;Incorrect Answer&quot;,&quot;Incorrect Question&quot;],&quot;assessment&quot;:[&quot;Incorrect Options&quot;,&quot;Incorrect Answer&quot;,&quot;Incorrect Question&quot;],&quot;simulation&quot;:[&quot;Simulation Not Working&quot;,&quot;Incorrect Results/Observations&quot;,&quot;Insufficient/Incorrect Instructions&quot;],&quot;DEFAULT&quot;:[&quot;Page Not Loading&quot;,&quot;Content Not Visible&quot;,&quot;Incorrect Content&quot;]}" position="override" button_style="
                           position: fixed; 
