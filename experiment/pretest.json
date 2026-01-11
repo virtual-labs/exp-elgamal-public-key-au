@@ -52,6 +52,57 @@
 },
 "correctAnswer": "a",
 "difficulty": "intermediate"
+},
+{
+"question": "ElGamal encryption uses:",
+"answers": {
+"a": "The same key for encryption and decryption",
+"b": "A public key for encryption and a private key for decryption",
+"c": "Only a private key",
+"d": "Only a public key"
+},
+"explanations": {
+"a": "Incorrect. ElGamal uses different keys for encryption and decryption.",
+"b": "Correct. ElGamal encryption uses a public key for encryption and a private key for decryption.",
+"c": "Incorrect. ElGamal requires both a public and a private key.",
+"d": "Incorrect. ElGamal requires both a public and a private key."
+},
+"correctAnswer": "b",
+"difficulty": "intermediate"
+},
+{
+"question": "The security of ElGamal relies on:",
+"answers": {
+"a": "Factorization of small numbers",
+"b": "The Discrete Logarithm Problem",
+"c": "XOR operations",
+"d": "Stream ciphers"
+},
+"explanations": {
+"a": "Incorrect. ElGamal does not rely on factorization of small numbers.",
+"b": "Correct. The security of ElGamal relies on the difficulty of solving the Discrete Logarithm Problem.",
+"c": "Incorrect. ElGamal does not primarily use XOR operations for its security.",
+"d": "Incorrect. ElGamal does not rely on stream ciphers for its security."
+},
+"correctAnswer": "b",
+"difficulty": "intermediate"
+},
+{
+"question": "ElGamal is mainly used for:",
+"answers": {
+"a": "Data compression",
+"b": "Secure communication and digital signatures",
+"c": "Image processing",
+"d": "Random number generation"
+},
+"explanations": {
+"a": "Incorrect. ElGamal is not used for data compression.",
+"b": "Correct. ElGamal is mainly used for secure communication and digital signatures.",
+"c": "Incorrect. ElGamal is not used for image processing.",
+"d": "Incorrect. ElGamal is not used for random number generation."
+},
+"correctAnswer": "b",
+"difficulty": "intermediate"
 }
 ]
 }

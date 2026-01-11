@@ -1,36 +1,9 @@
-# ElGamal Public Key Cryptosystem
-The ElGamal public key cryptosystem is an asymmetric encryption algorithm that provides secure communication over an insecure channel. Named after its inventor, Taher ElGamal, it is widely used for key exchange and digital signatures.
+# Experiment 9 - Understanding ElGamal Public Key Cryptosystem
 
-## Key Components
-### 1. Key Generation
-ElGamal uses a pair of keys: a public key and a private key.
-- **Public Key (PK):** (g, p, y)
-  - g: a generator of a finite cyclic group
-  - p: a large prime number
-  - y: (g^x) mod p, where x is the private key
+## ElGamal Public Key Cryptosystem
 
-- **Private Key (SK):**
-  - x: a random integer, 1 < x < p-1
+The ElGamal cryptosystem is an asymmetric encryption method that uses a pair of keys: a public key for encryption and a private key for decryption. It is based on the difficulty of solving certain mathematical problems, making it computationally secure. The system allows secure communication between parties without requiring a shared secret key in advance.
 
-### 2. Encryption
-The sender uses the recipient's public key to encrypt the message.
-1. **Select Random Number (k):**
-   - k is a random integer, 1 < k < p-1, relatively prime to p-1.
+In the encryption process, a sender uses the receiver’s public key along with a randomly chosen number to convert the original message into ciphertext. The receiver then uses their private key to decrypt the ciphertext and retrieve the original message. This method ensures that even if someone intercepts the ciphertext, they cannot recover the original message without the private key.
 
-2. **Compute Temporary Values:**
-   - a = (g^k) mod p
-   - b = (y^k * message) mod p
-
-3. **Transmit the Cipher (a, b):**
-   - The ciphertext is (a, b).
-
-### 3. Decryption
-The recipient uses their private key to decrypt the received ciphertext.
-1. **Compute the Shared Secret:**
-   - s = (a^x) mod p
-
-2. **Compute the Inverse of s:**
-   - s_inv = multiplicative_inverse(s, p)
-
-3. **Recover the Original Message:**
-   - message = (b * s_inv) mod p
+ElGamal is widely used in secure communication systems and digital signatures because of its strong security features. Its security depends on the use of large numbers and randomness during encryption. The cryptosystem forms the basis for other cryptographic protocols, such as the Digital Signature Algorithm (DSA), and is an important tool for maintaining confidentiality and authenticity in modern communication.
