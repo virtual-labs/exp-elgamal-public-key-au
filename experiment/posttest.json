@@ -51,6 +51,57 @@
       },
       "correctAnswer": "a",
       "difficulty": "intermediate"
+    },
+        {
+      "question": "ElGamal provides semantic security under:",
+      "answers": {
+        "a": "Chosen plaintext attack",
+        "b": "Known plaintext attack only",
+        "c": "Ciphertext-only attack",
+        "d": "Brute force attack only"
+      },
+      "explanations": {
+        "a": "Correct. ElGamal encryption is semantically secure under chosen plaintext attacks.",
+        "b": "Incorrect. ElGamal's security extends beyond known plaintext attacks.",
+        "c": "Incorrect. ElGamal is designed to resist more than just ciphertext-only attacks.",
+        "d": "Incorrect. ElGamal's security is not limited to brute force attacks."
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+        {
+      "question": "Why is randomness important in ElGamal encryption?",
+      "answers": {
+        "a": "To reduce message size",
+        "b": "To ensure the ciphertext is unique each time",
+        "c": "To speed up decryption",
+        "d": "To make the public key stronger"
+      },
+      "explanations": {
+        "a": "Incorrect. Randomness does not reduce message size in ElGamal encryption.",
+        "b": "Correct. Randomness ensures that the ciphertext is unique each time the same message is encrypted, enhancing security.",
+        "c": "Incorrect. Randomness does not speed up decryption in ElGamal encryption.",
+        "d": "Incorrect. Randomness does not directly affect the strength of the public key in ElGamal encryption."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+        {
+      "question": "Which statement is true about ElGamal encryption?",
+      "answers": {
+        "a": "The same ciphertext is generated for the same message every time",
+        "b": "The ciphertext changes each time even for the same message",
+        "c": "Encryption does not require the receiver’s public key",
+        "d": "Decryption can be done without the private key"
+      },
+      "explanations": {
+        "a": "Incorrect. ElGamal encryption produces different ciphertexts for the same message due to randomness.",
+        "b": "Correct. ElGamal encryption uses randomness, resulting in different ciphertexts for the same message each time.",
+        "c": "Incorrect. ElGamal encryption requires the receiver’s public key for encryption.",
+        "d": "Incorrect. Decryption in ElGamal requires the private key."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
     }
   ]
 }
