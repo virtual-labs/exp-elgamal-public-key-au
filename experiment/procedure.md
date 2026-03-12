@@ -1,5 +1,6 @@
 ### Procedure
 
+
 #### Step 1: Key Generation Process
 
 1. Students select/input the values of p, g, and Bob's private key (b).
