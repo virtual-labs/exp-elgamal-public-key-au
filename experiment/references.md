@@ -1,6 +1,5 @@
-# Experiment 9 - Understanding ElGamal Public Key Cryptosystem
 
-## Text Book(s)
+#### Text Book(s)
 
 1) https://www.cs.drexel.edu/~johnsojr/2017-18/fall/cs303/lectures/elgamal.html?utm_source=chatgpt.com
 
