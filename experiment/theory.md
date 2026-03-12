@@ -1,6 +1,5 @@
-# Experiment 9 - Understanding ElGamal Public Key Cryptosystem
 
-## ElGamal Public Key Cryptosystem
+#### ElGamal Public Key Cryptosystem
 
 The ElGamal cryptosystem is an asymmetric encryption method that uses a pair of keys: a public key for encryption and a private key for decryption. It is based on the difficulty of solving certain mathematical problems, making it computationally secure. The system allows secure communication between parties without requiring a shared secret key in advance.
 
